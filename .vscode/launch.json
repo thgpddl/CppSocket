@@ -1,0 +1,29 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+        "args": [],  //这里定义好了可执行文件的参数
+        "name":"test",							//运行或者debug项目的名字（随便）
+        "type": "cppdbg",
+        "request": "launch",
+        // "program": "${fileDirname}/${fileBasenameNoExtension}",	// 这里可以通过${}自动定位可执行文件
+        "program": "${fileDirname}/build/main",   //也可以直接指定可执行文件所在
+        "cwd": "${fileDirname}",
+        // "setupCommands": [                             // 这里是为了解决调试时看不到变量的问题 https://blog.csdn.net/u011622208/article/details/132083666
+        //     {
+        //         "description": "Test",
+        //         "text": "python import sys;sys.path.insert(0, '/usr/share/gcc/python');from libstdcxx.v6.printers import register_libstdcxx_printers;register_libstdcxx_printers(None)",
+        //         "ignoreFailures": false
+        //     },
+        //     {
+        //         "description": "Enable pretty-printing for gdb",
+        //         "text": "-enable-pretty-printing",
+        //         "ignoreFailures": true
+        //     }
+        // ]
+        
+    }]
+}
